@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - La Maison</title>
+    <link rel="icon" href="media/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+        .reservas-panel {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            padding: 20px;
+        }
+
+        .mesa {
+            background-color: #66cc99;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .mesa:hover {
+            background-color: #4ca080;
+        }
+
+        .mesa-reservada {
+            background-color: #db1010;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .caja-reserva{
+            background-color: rgba(185, 154, 74);
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+            height: 1000px;
+            text-align: center;
+            padding: auto;
+            display: flex;
+        }
+        .form{
+            width: 60%;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+        }
+        .contenedor {
+            margin-top: 20px;
+            position: relative;
+            width: auto;
+            max-width: 800px;
+            margin: auto;
+            height: 601px;
+            overflow: hidden;
+            border: 2px solid #ddd;
+        }
+
+        .slider {
+            display: flex;
+            animation: deslizar 6s infinite;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Botones de navegación */
+        .anterior, .siguiente {
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes deslizar {
+            0% {
+                transform: translateX(0%);
+            }
+            25% {
+                transform: translateX(0%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            75% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+    </style>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+     crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+     crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+     crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <audio src="media/audio.mp3" autoplay="autoplay" loop="loop"></audio>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="lamaison.html">La Maison</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="lamaison.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="qs.html">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titulo">
+            La Maison
+        </div>
+        <div class="exp">
+            <span>RESERVA AQUÍ<br> TU MESA</span>
+        </div>
+
+        <div class="reservas-panel">
+            <div class="mesa" onclick="reservarMesa(this)">1</div>
+            <div class="mesa" onclick="reservarMesa(this)">2</div>
+            <div class="mesa" onclick="reservarMesa(this)">3</div>
+            <div class="mesa" onclick="reservarMesa(this)">4</div>
+            <div class="mesa" onclick="reservarMesa(this)">5</div>
+            <div class="mesa" onclick="reservarMesa(this)">6</div>
+            <div class="mesa" onclick="reservarMesa(this)">7</div>
+            <div class="mesa" onclick="reservarMesa(this)">8</div>
+            <div class="mesa" onclick="reservarMesa(this)">9</div>
+            <div class="mesa" onclick="reservarMesa(this)">10</div>
+            <div class="mesa" onclick="reservarMesa(this)">11</div>
+            <div class="mesa" onclick="reservarMesa(this)">12</div>
+            <div class="mesa" onclick="reservarMesa(this)">13</div>
+            <div class="mesa" onclick="reservarMesa(this)">14</div>
+            <div class="mesa" onclick="reservarMesa(this)">15</div>
+            <div class="mesa" onclick="reservarMesa(this)">16</div>
+            <div class="mesa" onclick="reservarMesa(this)">17</div>
+            <div class="mesa" onclick="reservarMesa(this)">18</div>
+            <div class="mesa" onclick="reservarMesa(this)">19</div>
+            <div class="mesa" onclick="reservarMesa(this)">20</div>
+        </div>
+        
+        <div class="exp">
+            <span>NUESTRAS<br> INSTALACIONES:</span>
+        </div><br><br>
+        <div class="contenedor">
+            <div class="slider">
+                <div class="slide">
+                    <img src="media/restaurante.jpg" alt="Restaurante 1">
+                </div>
+                <div class="slide">
+                    <img src="media/tavernier.jpg" alt="Restaurante 2">
+                </div>
+                <div class="slide">
+                    <img src="media/Cocina.jpg" alt="Restaurante 3">
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+    <p class="footer">&copy; Todos los derechos reservados - La Maison</p> 
+    <script>
+        function reservarMesa(element) {
+            // verifica si la mesa ya está reservada
+            if (!element.classList.contains("mesa-reservada")) {
+                // cambia la clase a "mesa-reservada"
+                element.classList.add("mesa-reservada");
+                element.classList.remove("mesa");
+                // mostrar un alert indicando qque se ha reservado
+                alert("Mesa reservada");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maison</title>
+    <link rel="icon" href="media/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+        #carouselExampleIndicators {
+            width: 65%;
+            margin: auto;
+        }
+
+        iframe {
+            width: 80%; 
+            height: 45vw;
+            max-width: 800px;
+            max-height: 450px;
+            display: block;
+            margin: auto;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <audio src="media/audio.mp3" autoplay="autoplay" loop="loop"></audio>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark top-fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">La Maison</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="lamaison.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="qs.html">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            La Maison
+        </div>
+        <br>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="media/tortilla.jpg" alt="Tortilla">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="media/pu.webp" alt="Pulpo a la Gallega">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="media/tapas.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        <div class="exp">
+            <span>EXPERIENCIAS <br>INOLVIDABLES</span>
+        </div><br><br>
+        <iframe width="560" height="315" src="media/video.mp4" frameborder="0" allowfullscreen></iframe>
+
+        <div class="reserva" id="reservar">
+            <a href="reserva.html">RESERVA TU MESA</a>
+        </div>
+        <div class="contenedor">
+            <div class="caja1">
+                <div class="text1">
+                    <h1>TAPAS</h1>
+                    <div class="textito">
+                        <h2>De la casa</h2>
+                        <ul>
+                            <li>Tortilla de patatas</li>
+                            <li>Pollo tandori</li>
+                            <li>Bacon con salsa BBQ</li>
+                            <li>Pollo kebab y salsa BBQ</li>
+                            <li>Lomo al ajillo y mayonesa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="caja2">
+                <img src="media/2.jpg" alt="">
+            </div>
+            <div class="caja3">
+                <img src="media/ta.jpeg" alt="" srcset="">
+            </div>
+            <div class="caja4">
+                <div class="text1">
+                    <h1>APERITIVOS</h1>
+                    <div class="textito">
+                        <h2>Clásicos</h2>
+                        <ul>
+                            <li>Patatas</li>
+                            <li>Nachos</li>
+                            <li>Alitas de pollo</li>
+                            <li>Aceitunas</li>
+                            <li>Bravas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="caja5">
+                <div class="text1">
+                    <h1>BEBIDAS</h1>
+                    <div class="textito">
+                        <h2>Refrescantes</h2>
+                        <ul>
+                            <li>Cerveza 🔞</li>
+                            <li>Agua</li>
+                            <li>Refrescos</li>
+                            <li>Copas 🔞</li>
+                            <li>Vino 🔞</li>
+                            <li>Café</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="caja6">
+                <img src="media/cerveza.jpg" alt="">
+            </div>
+            <p class="footer">&copy; Todos los derechos reservados - La Maison</p>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

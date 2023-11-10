@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maison - Menú</title>
+    <link rel="icon" href="media/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+        .contenedor-productos {
+            font-weight: bold;
+            font-size: 20px;
+            color: #333;
+            text-shadow: 0px 0px 3px white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255,0.2);
+            height: 1300px;
+        }
+
+        .producto {
+            margin-top: 20px;
+            width: calc(20% - 10px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .imagen-producto {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .btn-carrito {
+            background-color: #6e0f1c;
+            height: 40px;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            border-radius: 20px;
+            border: 1px solid #6e0f1c;
+        }
+
+        .btn-carrito:hover {
+            background-color: rgb(255, 255, 255);
+            color: #6e0f1c;
+            border: 1px solid #6e0f1c;
+        }
+
+        .productos-anadidos {
+            background-color: WHITE;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+            display: block;
+        }
+
+        .lista {
+            list-style: none;
+            padding: 0;
+            margin: auto;
+        }
+
+        .lista li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+
+        .nombre {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .precio {
+            font-weight: normal;
+            color: #777;
+        }
+
+        .precio-total {
+            font-weight: bold;
+            color: #6e0f1c;
+        }
+
+        .total {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 20px auto;
+            width: 60%;
+        }
+
+        section img {
+            width: 50px;
+        }
+
+        .formulario {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        .roww {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: space-between;
+            width: 100%;
+            line-height: 20px;
+            margin-top: 20px;
+        }
+        .form1{
+            width: 100%;
+            padding: 20px;
+            
+        }
+        input, select{
+            width: 150px;
+            background-color: #6e0f1c;
+            border: 1px solid #6e0f1c;
+            border-radius: 10px;
+            height: 50px;
+            color: white;
+        }
+        select{
+            width: 190px;
+        }
+        
+        .centro{
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+</head>
+
+<body>
+    <header>
+        <audio src="media/audio.mp3" autoplay="autoplay" loop="loop"></audio>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="lamaison.html">La Maison</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="lamaison.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="qs.html">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="titulo">
+            La Maison
+        </div>
+
+        <div class="contenedor-productos">
+            <div class="contenedor-productos">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="media/ac.jpg" alt="Producto 1" class="imagen-producto">
+                    <p>Aceitunas</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="media/jamon.jpg" alt="Producto 2" class="imagen-producto">
+                    <p>Jamón Serrano</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img src="media/tortilla.jpg" alt="Producto 3" class="imagen-producto">
+                    <p>Tortilla Española</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 4 -->
+                <div class="producto">
+                    <img src="media/gambas-ajillo-t.jpg.webp" alt="Producto 4" class="imagen-producto">
+                    <p>Gambas al Ajillo</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 5 -->
+                <div class="producto">
+                    <img src="media/pimientos-padron-3.jpg" alt="Producto 5" class="imagen-producto">
+                    <p>Pimientos de Padrón</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 6 -->
+                <div class="producto">
+                    <img src="media/croq.jpg" alt="Producto 6" class="imagen-producto">
+                    <p>Croquetas</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 7 -->
+                <div class="producto">
+                    <img src="media/queso.jpg" alt="Producto 7" class="imagen-producto">
+                    <p>Queso Manchego</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 8 -->
+                <div class="producto">
+                    <img src="media/calamares.jpg" alt="Producto 8" class="imagen-producto">
+                    <p>Calamares a la Romana</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 9 -->
+                <div class="producto">
+                    <img src="media/boquerones.jpg" alt="Producto 9" class="imagen-producto">
+                    <p>Boquerones en Vinagre</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 10 -->
+                <div class="producto">
+                    <img src="media/pinchos-morunos-pavo-receta-saludable-sabrosa-karlos-arguinano_98.webp"
+                        alt="Producto 10" class="imagen-producto">
+                    <p>Pinchos Morunos</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 11 -->
+                <div class="producto">
+                    <img src="media/spicy-potatoes.jpg" alt="Producto 11" class="imagen-producto">
+                    <p>Patatas Bravas</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 12 -->
+                <div class="producto">
+                    <img src="media/pan-con-tomate.jpeg" alt="Producto 12" class="imagen-producto">
+                    <p>Pan con Tomate</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 13 -->
+                <div class="producto">
+                    <img src="media/huevos_rellenos.webp" alt="Producto 13" class="imagen-producto">
+                    <p>Huevos Rellenos</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 14 -->
+                <div class="producto">
+                    <img src="media/pulpo-gallega.jpg" alt="Producto 14" class="imagen-producto">
+                    <p>Pulpo a la Gallega</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+            
+                <!-- Producto 15 -->
+                <div class="producto">
+                    <img src="media/ensaladilla_rusa.jpg" alt="Producto 15" class="imagen-producto">
+                    <p>Ensaladilla Rusa</p>
+                    <button class="btn btn-carrito mx-auto mt-2">Añadir al Carrito</button>
+                </div>
+        </div>
+
+        <section class="productos-anadidos">
+            <h2><u>Productos Añadidos</u><img src="media/carrito.jpg" alt=""></h2>
+            <ul class="lista">
+                <li>
+                    <span class="nombre">- Aceitunas</span>
+                    <span class="precio">2.50€</span> ->
+                    <span class="precio-total">7.50€</span>
+                </li>
+                <li>
+                    <span class="nombre">- Jamón Serrano</span>
+                    <span class="precio">3.00€</span> ->
+                    <span class="precio-total">6.00€</span>
+                </li>
+            </ul>
+            <br>
+            <div class="formulario">
+                <form class="form1">
+                    <div class="roww">
+                        <input type="text" id="fname" name="firstname" placeholder="Nombre..">
+                        <input type="text" id="lname" name="lastname" placeholder="Apellidos">
+                        <input type="text" id="lname" name="lastname" placeholder="Nº Tarjeta">
+                    </div>
+                    <div class="centro"><input type="submit" value="Realizar Pago"></div>
+                </form>
+            </div>
+        </section>
+   </main>
+
+
+    <script>
+        var sidebar = document.getElementById('sidebar');
+        var wrapper = document.getElementById('wrapper');
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var wrapper = document.getElementById('wrapper');
+            document.getElementById('sidebarCollapse').addEventListener('click', function () {
+                sidebar.classList.toggle('active');
+                wrapper.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+html {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  width: 100%;
+
+}
+.nav-item {
+  margin-left: 6rem;
+}
+.titulo {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #983909;
+  font-size: 6rem;
+  height: 200px;
+  background-color: rgba(185, 154, 74);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+  background-color: rgba(185, 154, 74);
+  box-shadow: 2px black;
+  margin: auto;
+  padding: 3%;
+
+}
+
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  color: #fff;
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 30px;
+  font-weight: bold;
+
+}
+
+input {
+  width: 60%;
+  height: 20px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 60%;
+  height: 40px;
+  margin: auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: .2s ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6d44b8;
+}
+
+.login {
+  height: 460px;
+  border-radius: 60% / 10%;
+}
+ header {
+  transition: top 0.5s, background-color 0.5s;
+  color: black;
+  background: #000000;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 10vmin;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+} 
+header.hidden {
+  top: -56px; 
+  background-color: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+nav a:link {
+  color: black;
+}
+
+
+nav a:hover {
+  color: white;
+  text-shadow: none;
+
+}
+nav.navbar {
+  position: relative;
+  z-index: 2; 
+}
+nav.navbar a.nav-link {
+  position: relative; 
+  z-index: 3; 
+  color: black; 
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: 0.6s;
+}
+body {
+  margin: 0;
+  width: 100%;
+  background-image: url("media/rest.jpg");
+  background-size: cover; /* ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-attachment: fixed;
+  display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+main {
+  width: 100%;
+  margin-top: 10vmin;
+  
+}
+.exp {
+  font-size: 65px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  width: 600px;
+  height: 200px;
+  background-color: rgba(175, 171, 171, 0.2); 
+  justify-content: center;
+  text-shadow: 1px 0px 0px black,
+    0px 1px 0px black,
+    -1px 0px 0px black,
+    0px -1px 0px black;
+}
+.exp span{
+  opacity: 1;
+}
+
+.reserva{
+  font-size: 54px;
+  letter-spacing: 10PX;
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(27, 23, 23);
+  width: 700px;
+  height: 100px;
+  background-color: rgba(185, 154, 74, 0.9);
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 15px;
+  border-color: burlywood;
+  border-style: solid;
+} 
+.reserva:hover{
+  background-color: black;
+  color: rgb(255, 246, 233);
+  transition: .6s;
+  box-shadow: 1px 1px 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.reserva a{
+  text-decoration: none;
+  color: inherit;
+}
+.reserva a:hover{
+  text-decoration: none;
+  color: white;
+  transition: .6s;
+}
+.reserva a:link{
+  text-decoration: none;
+  color: white;
+  color: inherit;
+}
+.contenedor {
+  margin-top: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 2000px;
+}
+
+.caja1, .caja4, .caja5 {
+  background-color: rgba(185, 154, 74);
+  width: 50%;
+  height: 1000px;
+  margin: 0;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 50px; 
+  padding-left: 80px;
+  line-height: 100px;
+}
+
+/*caja 1*/
+.caja1 h1, .caja4 h1, .caja5 h1 {
+  font-size: 84px;
+  text-decoration: underline;
+}
+
+.caja1 .text1 h2, .caja4 .text1 h2, .caja5 .text1 h2 {
+  font-size: 46px; /* tamaño de fuente para el h2*/
+  padding-left: 50px;
+}
+
+
+.caja1 .text1 .textito ul, .caja4 .text1 .textito ul, .caja5 .text1 .textito ul {
+  list-style: none; /* quita los puntos de lista */
+  padding-left: 70px;
+}
+
+.caja1 .text1 .textito ul li, .caja4 .text1 .textito ul li, .caja5 .text1 .textito ul li {
+  font-size: 35px; /* tamaño de fuente para los elementos de la lista */
+  margin-left: 20px;
+}
+
+/*caja 2,3,6*/
+.caja2, .caja3, .caja6 {
+  width: 50%;
+  height: 1000px;
+  box-sizing: border-box;
+  margin: 0;
+  float: right;
+  overflow: hidden; /* recorta la imagen si es necesario */
+}
+.caja2 img, .caja3 img, .caja6 img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* ajusta la imagen para cubrir todo el espacio, recortándola si es necesario */
+}
+
+
+footer, .footer {
+  position:relative;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 20px; 
+  bottom: 0;
+  font-size: 12px;
+}
